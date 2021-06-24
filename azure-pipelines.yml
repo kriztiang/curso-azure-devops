@@ -1,4 +1,10 @@
 # Docker
+- task: ECRPullImage@1
+  inputs:
+    awsCredentials: 'AWSCris'
+    regionName: 'us-east-2'
+    repository: 'Craldo'
+    imageSource: 'imagetag'
 # Build a Docker image
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
